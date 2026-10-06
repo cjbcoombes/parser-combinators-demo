@@ -20,7 +20,6 @@ maintainer:         cjbcoombes@gmail.com
 -- copyright:
 -- category:
 extra-source-files:
-    CHANGELOG.md
     README.md
 
 library
@@ -31,7 +30,7 @@ library
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
-    build-depends:    base ^>=4.17.2.0, ansi-terminal, containers, random
+    build-depends:    base >=4.17.2.0 && <4.23, ansi-terminal, containers, random
     hs-source-dirs:   src
     default-language: Haskell2010
 
@@ -44,7 +43,7 @@ executable haskell-terminal-demo
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
     build-depends:
-        base ^>=4.17.2.0,
+        base,
         haskell-terminal-demo
 
     hs-source-dirs:   app
